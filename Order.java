@@ -28,5 +28,15 @@ public class Order {
         }
         System.out.println(total() + " kr" + " TOTAL" );
     }
+    
+    public boolean payWith(CreditCard card) {
+        if (card.withdraw(total())) {
+            return true;
+        } else {
+            System.out.println("ERROR: Payment failed");
+            return false;
+        }
+    }
+
 
 }

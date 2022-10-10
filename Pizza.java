@@ -31,6 +31,4 @@ public class Pizza extends Food {
 
         System.out.print(" {" + displayedToppings + " }");
     }
-
-
 }

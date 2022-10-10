@@ -13,7 +13,7 @@ public class Food {
     }
 
     public void display() {
-        System.out.println(price + " kr " + name);
+        System.out.print(price + " kr " + name);
     }
 
 }

@@ -15,6 +15,22 @@ public class Pizza extends Food {
         price += 10;
     }
 
-    
+    public void setName(String name) {
+        super.name = name;
+    }
+
+    public void display() {
+        super.display();
+
+        String displayedToppings = "";
+        String separator = "";
+        for (String topping : toppings) {
+            displayedToppings += separator + " " + topping;
+            separator = ",";
+        }
+
+        System.out.print(" {" + displayedToppings + " }");
+    }
+
 
 }
